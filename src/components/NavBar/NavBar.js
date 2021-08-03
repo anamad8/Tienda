@@ -3,6 +3,7 @@ import { Nav, Navbar, Container,ButtonGroup, Dropdown} from 'react-bootstrap';
 import {Mujer} from '../Mujer/Mujer'
 import {Hombre} from '../Hombre/Hombre'
 import Logo from '../img/logo.jpg'
+import './NavBar.css'
 
 function NavBar() {
     return (
@@ -11,14 +12,7 @@ function NavBar() {
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="me-auto">
-                    <Nav.Link href="#home">Home</Nav.Link>
-                    <img
-                        src={Logo}
-                        width="30"
-                        height="30"
-                        className="logo"
-                        alt="logo"
-                    />
+                    <img src={Logo} alt="logo" />
                     <Nav.Link href="#link">Nosotros</Nav.Link>
                     <Nav.Link href="#link">Tienda</Nav.Link>
                     <Dropdown as={ButtonGroup}>
