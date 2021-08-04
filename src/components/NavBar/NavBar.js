@@ -12,7 +12,7 @@ function NavBar() {
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="me-auto">
-                    <img src={Logo} alt="logo" />
+                    <img className="logo" src={Logo} alt="logo" />
                     <Nav.Link href="#link">Nosotros</Nav.Link>
                     <Nav.Link href="#link">Tienda</Nav.Link>
                     <Dropdown as={ButtonGroup}>
