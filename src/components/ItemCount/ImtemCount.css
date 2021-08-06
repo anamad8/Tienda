@@ -1,0 +1,49 @@
+.productos{
+    padding: 5rem 1rem;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+    gap: 3rem 2rem;
+    box-sizing: border-box;
+    
+}
+.producto{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 1px 10px 10px 2px black;
+    border: 6px solid transparent;
+    border-radius: 5px;
+    
+}
+
+.producto:hover{
+    border: 6px solid #0c0b0f77 ;
+}
+
+.nomProducto h3{
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.precio{
+    font-size: 2rem;
+    color: #1a202c;
+}
+
+.producto img{
+    width: 310px;
+}
+.nomProducto h3{
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: black;
+    font-family: Helvetica, sans-serif; 
+}
+
+.nomProducto p{
+    color: #1a202c;
+    font-size: 2rem;
+}

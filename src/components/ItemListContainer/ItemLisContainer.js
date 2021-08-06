@@ -8,8 +8,8 @@ function ItemLisContainer() {
     return (
         <Container>
             <Row xs={1} md={2} className="d-flex flex-row bd-higlight mb-3 marco">
-                <Col className="container-fluid p-2 bd-higlight"><img img className="mujerHombre" src={ imgMujer } /> </Col>
-                <Col className="container-fluid p-2 bd-higlight"><img className="mujerHombre" src={ imgHombre } /> </Col>
+                <Col className="container-fluid p-2 bd-higlight mujerHombre"><a href="#"><img img className="mujerHombre" src={ imgMujer } /></a> </Col>
+                <Col className="container-fluid p-2 bd-higlight mujerHombre"><a href="#"><img className="mujerHombre" src={ imgHombre } /></a> </Col>
             </Row>
         </Container>
     );

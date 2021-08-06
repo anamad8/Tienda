@@ -3,7 +3,7 @@ import { Dropdown} from 'react-bootstrap';
 export const Mujer = () => {
     return (
         
-        <Dropdown.Item eventKey="1">Mujer</Dropdown.Item>
+        <Dropdown.Item eventKey="1">MUJER</Dropdown.Item>
                         
     );
 }
