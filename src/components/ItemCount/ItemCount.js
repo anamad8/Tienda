@@ -1,30 +1,31 @@
-import React, { useContext} from 'react';
-import './ImtemCount.css'
-import {DataContext} from '../itemList/itemList'
-import Item from '../itemList/Item'
+import React from 'react'
 
+class ItemCount extends React.Component {
+    constructor(props) {
+        super(props);
+        this.state = { number: 0 };
+    }
 
-function ItemCount() {
+    onIncrease() {
+        this.setState(prevState => ({
+        number: prevState.number + 1
+        }));
+    }
 
-    const value = useContext(DataContext)
-    const [productos] = value.productos
-    console.log(productos)
-    return (
-        <div className="productos">
-            {
-                productos.map((producto) => (
-                    <Item 
-                    key={producto.id} 
-                    id={producto.id}
-                    price={producto.price} 
-                    titel={producto.titel}                    
-                    image={producto.image}
-                    />
-                ))
-            }
-        </div>
-        
-    );
+    onDecreae() {
+        this.setState({ number: this.state.number - 1 });
+    }
+
+    render() {
+        return (
+            <div>
+            <h1>Carrito</h1>
+            <button onClick={this.onIncrease.bind(this)}>Increase</button>
+            <button onClick={this.onDecreae.bind(this)}>Decrease</button>
+            <p>{this.state.number}</p>
+            </div>
+        );
+    }
 }
 
-    export default ItemCount;
+export default ItemCount;
