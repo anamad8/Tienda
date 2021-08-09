@@ -3,7 +3,9 @@ import NavBar from './components/NavBar/NavBar';
 import ItemLisContainer from './components/ItemListContainer/ItemLisContainer.js'
 import ItemCount from './components/ItemCount/ItemCount';
 
-
+const datos ={
+  titulo: "PRODUCTOS"
+}
 
 function App() {
 
@@ -11,7 +13,7 @@ function App() {
     
     <div className="App">
       <NavBar />
-      <ItemLisContainer />
+      <ItemLisContainer titulo= {datos.titulo} />
       <ItemCount />
     </div>
     

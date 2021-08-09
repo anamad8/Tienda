@@ -6,15 +6,15 @@ import imgHombre from '../img/hombre.jpg'
 import Api from '../../api'
 
 
-
-const promesa = new Promise((resolve, reject) => {
-    setTimeout(function(){
-        resolve(Api); 
-    }, 1000);
-});
+function ItemLisContainer({titulo}) {
+    
+    const promesa = new Promise((resolve, reject) => {
+        setTimeout(function(){
+            resolve(Api); 
+        }, 1000);
+    });
 
     promesa.then(console.log);
-
     const productos = onSeleccionarProductos => {
         return productos.map(productos =>{
             const{id, titel, imagen } = productos;
@@ -27,14 +27,13 @@ const promesa = new Promise((resolve, reject) => {
             )
         })
     }
-
-function ItemLisContainer() {
     return (
         <Container>
             <Row xs={1} md={2} className="d-flex flex-row bd-higlight mb-3 marco">
                 <Col className="container-fluid p-2 bd-higlight mujerHombre"><a href="#"><img img className="mujerHombre" src={ imgMujer } /></a> </Col>
                 <Col className="container-fluid p-2 bd-higlight mujerHombre"><a href="#"><img className="mujerHombre" src={ imgHombre } /></a> </Col>
             </Row>
+            <h2 className="tituloProductos">{titulo}</h2>
             <div className="productos">
                 <Card className="producto">
                     <Card.Img variant="top" className="productoImg" src={Api.imagen} />
