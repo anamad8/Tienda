@@ -11,7 +11,7 @@ export const Item = ({characters}) => {
     return (
         <div className="productos">
             <Card className="producto">
-                    <Card.Img variant="top" className="productoImg"  />
+                    <Card.Img variant="top" className="productoImg" characters={characters} />
                     <Card.Body>
                         <Card.Title className="titulo"><ItemList characters={characters}/></Card.Title>
                         <Card.Text>
