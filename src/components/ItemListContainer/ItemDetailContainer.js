@@ -1,11 +1,10 @@
-// tengo que hacer el card
 
 import React from 'react'
 import {Card, Button} from 'react-bootstrap';
 import './ItemLisContainer.css';
 
 
-export const Item = ({character}) => {
+export const ItemDetailContainer = ({character}) => {
 
     return (
         <div className="productos">
@@ -24,4 +23,4 @@ export const Item = ({character}) => {
     )  
 }  
 
-export default Item;
+export default ItemDetailContainer;
