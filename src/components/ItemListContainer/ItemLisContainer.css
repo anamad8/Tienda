@@ -29,19 +29,17 @@
 }
 
 .productos{
-    padding: 5rem 1rem;
+    padding: 5rem 2rem;
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
-    gap: 3rem 2rem;
+    gap: 3rem 1rem;
     box-sizing: border-box;
     z-index: 0;
-    
-    
 }
+
 .producto{
     display: flex;
-    width: 100%;
     flex-direction: column;
     align-items: center;
     box-shadow: 1px 10px 10px 2px black;
@@ -53,9 +51,6 @@
     border: 6px solid #0c0b0f77 ;
 }
 
-.productoImg{
-    width: 510px;
-}
 
 .titulo{
     font-weight: 600;

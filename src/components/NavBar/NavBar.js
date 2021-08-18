@@ -5,9 +5,6 @@ import Logo from '../img/logo.jpg';
 import './NavBar.css';
 import 'boxicons';
 
-
-
-
 function NavBar() {
     return (
         

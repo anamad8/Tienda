@@ -10,7 +10,7 @@ export const Item = ({character}) => {
     return (
         <div className="productos">
             <Card className="producto"> 
-                    <Card.Img variant="top" style={{ width: "3rem" }} src={character.imagen} />
+                    <Card.Img variant="top" style={{ width: "250px" }} src={character.imagen} />
                     <Card.Body>
                         <Card.Title className="titulo"> {character.titel}</Card.Title>
                         <Card.Text>
@@ -19,7 +19,6 @@ export const Item = ({character}) => {
                         <Button variant="primary">Agregar al Carrito</Button>
                     </Card.Body>
                 </Card>
-                    
         </div>
     )  
 }  
